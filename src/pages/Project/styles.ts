@@ -37,7 +37,7 @@ export const SubTitle = styled.h2`
 `
 export const ContentGallery = styled.div`
 display: grid;
-grid-template-columns: auto auto auto; 
+grid-template-columns: auto auto autogit; 
 gap: 20px;
 `
 
