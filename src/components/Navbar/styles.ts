@@ -12,7 +12,7 @@ export const Container = styled.nav`
   
 `
 
-export const Button = styled(Link)`
+export const ItemList = styled.li`
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +20,7 @@ export const Button = styled(Link)`
   color: #fff;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 `
 export const Imagem = styled.img`
   height: auto;

@@ -1,36 +1,37 @@
 import React from 'react';
 import foto from '../../assets/Aleir.jpg'
-import { Button, Imagem, Container } from './styles'
+import { ItemList, Imagem, Container } from './styles'
 import { FaUserAlt, FaRegFileCode, FaHome, FaRegEnvelope } from 'react-icons/fa'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, useHistory } from 'react-router-dom';
 
 
 const Navbar = () => {
+  const history = useHistory()
   return (
     <Container>
       <Imagem src={foto} />
       <BrowserRouter>
-        <Button to="/">
+        <ItemList onClick={() => history.push('/')}>
           <FaHome size={40} fill='#1E90FF' />
           <p>Inicio</p>
-        </Button>
+        </ItemList>
 
-        <Button to="/about">
+        <ItemList onClick={() => history.push("/about")}>
           <FaUserAlt size={40} fill='#1E90FF' />
           <p>Sobre</p>
-        </Button>
+        </ItemList>
 
-        <Button to="/projects">
+        <ItemList onClick={() => history.push("/projects")}>
           <FaRegFileCode size={40} fill='#1E90FF' />
           <p>Projetos</p>
-        </Button>
+        </ItemList >
 
-        <Button to="/contact">
+        <ItemList onClick={() => history.push("/contact")} >
           <FaRegEnvelope size={40} fill='#1E90FF' />
           <p>Contatos</p>
-        </Button>
-      </BrowserRouter>
-    </Container>
+        </ ItemList >
+    </BrowserRouter >
+    </Container >
   )
 }
 
