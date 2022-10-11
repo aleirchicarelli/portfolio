@@ -3,6 +3,7 @@ import Robotron from '../../assets/Robotron.png'
 import Barbearia from '../../assets/Barbearia.png'
 import AluraMidi from '../../assets/AluraMidi.png'
 import Tabuada from '../../assets/Tabuada.png'
+import Portfolio from '../../assets/Portfolio.png'
 
 import * as S from "./styles";
 
@@ -44,6 +45,15 @@ const Project = () => {
                   <S.Image src={Tabuada} />
                 </S.LinkCard>
                 <S.Description>Tabuada</S.Description>
+              </S.Gallery>
+            </S.Responsive>
+
+            <S.Responsive>
+              <S.Gallery>
+                <S.LinkCard target="_blank" href='https://github.com/aleirchicarelli/portfolio'>
+                  <S.Image src={Portfolio} />
+                </S.LinkCard>
+                <S.Description>Código do portfólio</S.Description>
               </S.Gallery>
             </S.Responsive>
           </S.ContentGallery>
