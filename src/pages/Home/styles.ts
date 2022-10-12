@@ -22,10 +22,17 @@ export const Title = styled.h1`
   font-size: 50px;
   line-height: 0%;
 
+  @media (max-width: 600px){
+    font-size: 30px;
+  }
 `
 
 export const SubTitle = styled.h2`
   color: #fff;
   font-size: 30px;
-  line-height: 0%;
+
+  @media (max-width: 600px){
+    font-size: 15px;
+  }
 `
+

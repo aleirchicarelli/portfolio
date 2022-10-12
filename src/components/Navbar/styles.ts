@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const Container = styled.nav`
   display:flex;
@@ -21,6 +20,16 @@ export const ItemList = styled.li`
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+
+  @media (max-width: 600px) {
+   & > p {
+    font-size: 14px;
+   }
+
+   & > svg {
+    height: 25px;
+   }
+  }
 `
 export const Imagem = styled.img`
   height: auto;

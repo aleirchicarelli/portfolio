@@ -36,21 +36,33 @@ export const SubTitle = styled.h2`
   font-size: 14px;
 `
 export const ContentGallery = styled.div`
-display: grid;
-grid-template-columns: auto auto auto; 
-gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  gap: 20px;
+
+  @media (max-width: 900px) {
+  grid-template-columns: auto auto;
+ }
+
+ @media (max-width: 600px) {
+  height: 100vh;
+  margin-bottom: 20px;
+  overflow: scroll;
+  grid-template-columns: auto;
+ }
 `
 
 export const Responsive = styled.div`
- padding: 0 6px;
+  padding: 0 6px;
   float: left;
 `
 
 export const Gallery = styled.div`
   border: 1px solid #ccc;
+  opacity: 0.8;
 
-  & :hover {
-    border: 1px solid #777;
+  &:hover {
+    opacity: 1;
   }
 `
 
