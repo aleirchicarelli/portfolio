@@ -6,7 +6,7 @@ const Home = () => {
     <Container>
       <Content>
         <Title>Aleir Chicarelli </Title>
-        <SubTitle>Fron End Developer</SubTitle>
+        <SubTitle>Front-End Developer</SubTitle>
       </Content>
     </Container>
   )
